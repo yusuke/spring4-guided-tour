@@ -55,7 +55,7 @@ class JdbcRepository {
 			},
 			new RowMapper<Person>() {
 				@Override
-				public Person mapRow(ResultSet resultSet, int i) throws SQLException {
+				public Person mapRow(ResultSet rs, int i) throws SQLException {
 					return new Person(rs.getString(1), rs.getString(2));
 				}
 			}
